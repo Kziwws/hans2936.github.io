@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="韩朔的博客">
 <meta property="og:description" content="最近用 Hexo 搭建了工作网站 CERN:Shuo Han，发现这个工具发文章就像是发朋友圈一样简单。虽然我在我的老网页上花了很多时间，但我还是决定换了。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-06-06T20:20:28.741Z">
+<meta property="og:updated_time" content="2018-06-06T21:13:55.136Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用 Hexo 搭建本站记录">
 <meta name="twitter:description" content="最近用 Hexo 搭建了工作网站 CERN:Shuo Han，发现这个工具发文章就像是发朋友圈一样简单。虽然我在我的老网页上花了很多时间，但我还是决定换了。">
@@ -23,12 +23,14 @@
     <link rel="alternate" href="/atom.xml" title="韩朔的博客" type="application/atom+xml">
   
   
-    <link rel="icon" href="/favicon.png">
+    <link rel="icon" href="/favicon.ico">
   
   
   <!-- <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css"> -->
   
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/gitment.css">
+  <script src="/js/gitment.browser.js"></script>
 </head>
 
 <body>
@@ -99,7 +101,9 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://hans2936.github.io/2018/06/06/HexoLog/" data-id="cji3k2npu0000tb0uqt13djak" class="article-share-link">Share</a>
+      <a data-url="https://hans2936.github.io/2018/06/06/HexoLog/" data-id="cji3kx25h0002w30u2zvxfprt" class="article-share-link">分享</a>
+      
+	<a href="https://hans2936.github.io/2018/06/06/HexoLog/#gitment" class="article-comment-link">评论</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
@@ -120,6 +124,22 @@
 
   
 </article>
+
+
+  <section id="comments">
+  <div id="gitment"></div>
+      <script>
+      const gitment = new Gitment({
+        owner: 'hans2936',
+        repo: 'hans2936.github.io',
+        oauth: {
+        client_id: '3e8c534985cee5b9549d',
+        client_secret: '292ef9d120bfb7ed9b61b0455a52c8c61737250c',
+        },
+      })
+      gitment.render('gitment')
+      </script>
+</section>
 
 </section>
         

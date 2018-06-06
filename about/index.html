@@ -22,12 +22,14 @@
     <link rel="alternate" href="/atom.xml" title="韩朔的博客" type="application/atom+xml">
   
   
-    <link rel="icon" href="/favicon.png">
+    <link rel="icon" href="/favicon.ico">
   
   
   <!-- <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css"> -->
   
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/gitment.css">
+  <script src="/js/gitment.browser.js"></script>
 </head>
 
 <body>
@@ -93,7 +95,9 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://hans2936.github.io/about/index.html" data-id="cji3jt7f10008sz0u9i0lx3px" class="article-share-link">Share</a>
+      <a data-url="https://hans2936.github.io/about/index.html" data-id="cji3kx25f0001w30u15dmzh1n" class="article-share-link">分享</a>
+      
+	<a href="https://hans2936.github.io/about/index.html#gitment" class="article-comment-link">评论</a>
       
       
     </footer>
@@ -102,6 +106,22 @@
     
   
 </article>
+
+
+  <section id="comments">
+  <div id="gitment"></div>
+      <script>
+      const gitment = new Gitment({
+        owner: 'hans2936',
+        repo: 'hans2936.github.io',
+        oauth: {
+        client_id: '3e8c534985cee5b9549d',
+        client_secret: '292ef9d120bfb7ed9b61b0455a52c8c61737250c',
+        },
+      })
+      gitment.render('gitment')
+      </script>
+</section>
 
 </section>
         
