@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://hans2936.github.io/"/>
-  <updated>2018-06-06T22:58:40.918Z</updated>
+  <updated>2018-06-07T21:54:02.988Z</updated>
   <id>https://hans2936.github.io/</id>
   
   <author>
@@ -17,17 +17,18 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>使用 Hexo 搭建本站记录</title>
+    <title>使用 Hexo 搭建本站</title>
     <link href="https://hans2936.github.io/2018/06/06/HexoLog/"/>
     <id>https://hans2936.github.io/2018/06/06/HexoLog/</id>
     <published>2018-06-06T18:55:42.000Z</published>
-    <updated>2018-06-06T22:58:40.918Z</updated>
+    <updated>2018-06-07T21:54:02.988Z</updated>
     
-    <content type="html"><![CDATA[<p>最近用 Hexo 搭建了工作网站 <a href="https://cern.ch/shhan" target="_blank" rel="noopener">CERN:Shuo Han</a>，发现这个工具发文章就像是发朋友圈一样简单。虽然我在我的老网页上花了很多时间，但我还是决定换了。</p><a id="more"></a>]]></content>
+    <content type="html"><![CDATA[<p>最近用 Hexo 搭建了工作网站 <a href="https://cern.ch/shhan" target="_blank" rel="noopener">CERN:Shuo Han</a>，发现这个工具发文章就像是发朋友圈一样简单。虽然我在我的老网页上花了很多时间，但我还是决定换了。</p><h2 id="Hexo设置"><a href="#Hexo设置" class="headerlink" title="Hexo设置"></a>Hexo设置</h2><p>默认主题 Landscape。<br>抬头图片位置：<code>themes/landscape/source/css/images/banner.jpg</code><br>评论系统为Gitment，需要编辑<code>themes/landscape/layout/_partial/</code> 中的 <code>article.ejs</code> 和 <code>head.ejs</code>。<br>分享按钮为自带按钮，包括Sina+Facebook。（改 <code>themes/landscape/source/js/script.js</code> 和 <code>themes/landscape/source/css/_partial/article.styl</code>）<br>jquery.min.js 路径从google改为 <a href="https://cdn.bootcss.com/jquery/2.0.3/jquery.min.js" target="_blank" rel="noopener">https://cdn.bootcss.com/jquery/2.0.3/jquery.min.js</a> (改 <code>after-footer.ejs</code>)</p><a id="more"></a>]]></content>
     
     <summary type="html">
     
       &lt;p&gt;最近用 Hexo 搭建了工作网站 &lt;a href=&quot;https://cern.ch/shhan&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;CERN:Shuo Han&lt;/a&gt;，发现这个工具发文章就像是发朋友圈一样简单。虽然我在我的老网页上花了很多时间，但我还是决定换了。&lt;/p&gt;
+&lt;h2 id=&quot;Hexo设置&quot;&gt;&lt;a href=&quot;#Hexo设置&quot; class=&quot;headerlink&quot; title=&quot;Hexo设置&quot;&gt;&lt;/a&gt;Hexo设置&lt;/h2&gt;&lt;p&gt;默认主题 Landscape。&lt;br&gt;抬头图片位置：&lt;code&gt;themes/landscape/source/css/images/banner.jpg&lt;/code&gt;&lt;br&gt;评论系统为Gitment，需要编辑&lt;code&gt;themes/landscape/layout/_partial/&lt;/code&gt; 中的 &lt;code&gt;article.ejs&lt;/code&gt; 和 &lt;code&gt;head.ejs&lt;/code&gt;。&lt;br&gt;分享按钮为自带按钮，包括Sina+Facebook。（改 &lt;code&gt;themes/landscape/source/js/script.js&lt;/code&gt; 和 &lt;code&gt;themes/landscape/source/css/_partial/article.styl&lt;/code&gt;）&lt;br&gt;jquery.min.js 路径从google改为 &lt;a href=&quot;https://cdn.bootcss.com/jquery/2.0.3/jquery.min.js&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://cdn.bootcss.com/jquery/2.0.3/jquery.min.js&lt;/a&gt; (改 &lt;code&gt;after-footer.ejs&lt;/code&gt;)&lt;/p&gt;
     
     </summary>
     
