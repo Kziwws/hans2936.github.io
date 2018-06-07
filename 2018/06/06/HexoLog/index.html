@@ -7,18 +7,18 @@
   
   <title>使用 Hexo 搭建本站 | 韩朔的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="最近用 Hexo 搭建了工作网站 CERN:Shuo Han，发现这个工具发文章就像是发朋友圈一样简单。虽然我在我的老网页上花了很多时间，但我还是决定换了。 Hexo设置默认主题 Landscape。抬头图片位置：themes/landscape/source/css/images/banner.jpg评论系统为Gitment，需要编辑themes/landscape/layout/_partia">
+  <meta name="description" content="最近用 Hexo 搭建了工作网站 CERN:Shuo Han，发现这个工具发文章就像是发朋友圈一样简单。虽然我以前用网页拼凑我的老网站花了很多时间，但我还是决定换了，写作和发布体验还是很重要的。我的理解是，这是一个自动生成静态（html+css+js）网站的工具，主题里是很多模块化的网页，可以通过.yml配置文件运用这些模块，把MarkDown(.md)博客批量转化为网页并且跟主页形成总分结构。下">
 <meta name="keywords" content="Hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用 Hexo 搭建本站">
 <meta property="og:url" content="https://hans2936.github.io/2018/06/06/HexoLog/index.html">
 <meta property="og:site_name" content="韩朔的博客">
-<meta property="og:description" content="最近用 Hexo 搭建了工作网站 CERN:Shuo Han，发现这个工具发文章就像是发朋友圈一样简单。虽然我在我的老网页上花了很多时间，但我还是决定换了。 Hexo设置默认主题 Landscape。抬头图片位置：themes/landscape/source/css/images/banner.jpg评论系统为Gitment，需要编辑themes/landscape/layout/_partia">
+<meta property="og:description" content="最近用 Hexo 搭建了工作网站 CERN:Shuo Han，发现这个工具发文章就像是发朋友圈一样简单。虽然我以前用网页拼凑我的老网站花了很多时间，但我还是决定换了，写作和发布体验还是很重要的。我的理解是，这是一个自动生成静态（html+css+js）网站的工具，主题里是很多模块化的网页，可以通过.yml配置文件运用这些模块，把MarkDown(.md)博客批量转化为网页并且跟主页形成总分结构。下">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-06-07T22:07:57.286Z">
+<meta property="og:updated_time" content="2018-06-07T23:33:10.332Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用 Hexo 搭建本站">
-<meta name="twitter:description" content="最近用 Hexo 搭建了工作网站 CERN:Shuo Han，发现这个工具发文章就像是发朋友圈一样简单。虽然我在我的老网页上花了很多时间，但我还是决定换了。 Hexo设置默认主题 Landscape。抬头图片位置：themes/landscape/source/css/images/banner.jpg评论系统为Gitment，需要编辑themes/landscape/layout/_partia">
+<meta name="twitter:description" content="最近用 Hexo 搭建了工作网站 CERN:Shuo Han，发现这个工具发文章就像是发朋友圈一样简单。虽然我以前用网页拼凑我的老网站花了很多时间，但我还是决定换了，写作和发布体验还是很重要的。我的理解是，这是一个自动生成静态（html+css+js）网站的工具，主题里是很多模块化的网页，可以通过.yml配置文件运用这些模块，把MarkDown(.md)博客批量转化为网页并且跟主页形成总分结构。下">
   
     <link rel="alternate" href="/atom.xml" title="韩朔的博客" type="application/atom+xml">
   
@@ -95,14 +95,71 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>最近用 Hexo 搭建了工作网站 <a href="https://cern.ch/shhan" target="_blank" rel="noopener">CERN:Shuo Han</a>，发现这个工具发文章就像是发朋友圈一样简单。虽然我在我的老网页上花了很多时间，但我还是决定换了。</p>
-<h2 id="Hexo设置"><a href="#Hexo设置" class="headerlink" title="Hexo设置"></a>Hexo设置</h2><p>默认主题 Landscape。<br>抬头图片位置：<code>themes/landscape/source/css/images/banner.jpg</code><br>评论系统为Gitment，需要编辑<code>themes/landscape/layout/_partial/</code> 中的 <code>article.ejs</code> 和 <code>head.ejs</code>。评论按钮可能导致Gitment不稳定，已取消。<br>分享按钮为自带按钮，包括Sina+Facebook（改 <code>themes/landscape/source/js/script.js</code> 和 <code>themes/landscape/source/css/_partial/article.styl</code>）。<br>jquery.min.js 路径从google改为 <a href="https://cdn.bootcss.com/jquery/2.0.3/jquery.min.js" target="_blank" rel="noopener">https://cdn.bootcss.com/jquery/2.0.3/jquery.min.js</a> (改 <code>after-footer.ejs</code>)</p>
+        <p>最近用 Hexo 搭建了工作网站 <a href="https://cern.ch/shhan" target="_blank" rel="noopener">CERN:Shuo Han</a>，发现这个工具发文章就像是发朋友圈一样简单。虽然我以前用网页拼凑<a href="https://github.com/hans2936/Hans_Blog_Old" target="_blank" rel="noopener">我的老网站</a>花了很多时间，但我还是决定换了，写作和发布体验还是很重要的。<br>我的理解是，这是一个自动生成静态（html+css+js）网站的工具，主题里是很多模块化的网页，可以通过.yml配置文件运用这些模块，把MarkDown(.md)博客批量转化为网页并且跟主页形成总分结构。<br>下面是搭建的过程和本站配置：</p>
+<p>首先，一切以<a href="https://hexo.io/zh-cn/index.html" target="_blank" rel="noopener">Hexo官网</a>为准。</p>
+<h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><ul>
+<li>正常使用Github的电脑。</li>
+<li>开了Github Pages的Repository。<br>如果不了解Github可以看<a href="https://www.jianshu.com/p/f82c76b90336" target="_blank" rel="noopener">我的简书</a>。</li>
+</ul>
 <a id="more"></a>
+<h3 id="在mac上配置Hexo文件夹"><a href="#在mac上配置Hexo文件夹" class="headerlink" title="在mac上配置Hexo文件夹"></a>在mac上配置Hexo文件夹</h3><p>安装 Node/Npm<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">brew update</span><br><span class="line">brew install node</span><br></pre></td></tr></table></figure></p>
+<p>安装 Hexo<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo -g</span><br><span class="line">hexo init blog</span><br><span class="line">cd blog</span><br><span class="line">npm install</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure></p>
+<p>这时博客就在本地生成了。访问<code>http://localhost:4000</code> 可以看效果。<br>可以说Hexo是很强大的，默认主题网站结构合理，适配手机，搜索栏（google）也有了。只需要优化（改一下失效的链接，添加评论，RSS等模块）就行了。</p>
+<h3 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+<p>生成/public 文件夹，里面是网站<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure></p>
+<p>把这个网站文件夹推送到服务器<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure></p>
+<p>删除网站文件夹<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure></p>
+<p>本地查看效果</p>
+<h3 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h3><p>配置文件是两个，第一个是根目录的 <code>_config.yml</code>。重要配置有</p>
+<ul>
+<li>language: zh-CN 是中文，不写是英文</li>
+<li>url: <a href="https://hans2936.github.io">https://hans2936.github.io</a> （我网站地址）</li>
+<li>root: / (根目录在哪里，github就写斜杠，不过有些服务器会多一层路径，一般是用户名)</li>
+<li>skip_render: README.md 这样可以在 /source 里面放一个 README.md，推送的时候自动传到 Github 上面</li>
+<li>theme: landscape 这里可以换主题</li>
+</ul>
+<p>推送设置 (GitHub)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: https://github.com/hans2936/hans2936.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></p>
+<p>如果有服务器，则可以用 rsync<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: rsync</span><br><span class="line">  host: 服务器名</span><br><span class="line">  user: 用户名</span><br><span class="line">  root: 放网站的文件夹</span><br><span class="line">  port: 22</span><br></pre></td></tr></table></figure></p>
+<p>第二个配置文件，是主题的配置文件 <code>themes/landscape/_config.yml</code>，主要有<br>导航栏<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  主页: /</span><br><span class="line">  归档: /archives</span><br><span class="line">  关于: /about</span><br><span class="line">rss: /atom.xml</span><br></pre></td></tr></table></figure></p>
+<p>侧边栏<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">widgets:</span><br><span class="line">- category</span><br><span class="line">- tag</span><br><span class="line">...</span><br></pre></td></tr></table></figure></p>
+<p>网站图标： favicon: /favicon.ico 其中 .ico 图片应放置在 /source</p>
+<h3 id="写新文章"><a href="#写新文章" class="headerlink" title="写新文章"></a>写新文章</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;article name&quot;</span><br></pre></td></tr></table></figure>
+<p>这条命令会在<code>source/_posts</code>产生新文件，然后改改文件名，在进入编辑MarkDown就行了。</p>
+<p>每篇文章最上面是配置区，能用到的主要是</p>
+<ul>
+<li>title: 题目</li>
+<li>date: 日期 （会影响在主页的顺序）</li>
+<li>tags: 标签</li>
+<li>categories: 分类</li>
+<li>updated: 修改日期</li>
+</ul>
+<p>配置区下面就随便写了。</p>
+<h3 id="创建页面"><a href="#创建页面" class="headerlink" title="创建页面"></a>创建页面</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page about</span><br></pre></td></tr></table></figure>
+<p>会在 <code>source/about</code> 里面产生新文件，跟文章是一样编辑的。<br>然后再从主题配置的导航栏里面加上这一页。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  ...</span><br><span class="line">  关于: /about</span><br></pre></td></tr></table></figure></p>
+<h3 id="创建侧边栏"><a href="#创建侧边栏" class="headerlink" title="创建侧边栏"></a>创建侧边栏</h3><p>比如在 <code>themes/landscape/layout/_widget/</code> 创建一个 about.ejs<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;% if (site.tags.length)&#123; %&gt;</span><br><span class="line">  &lt;div class=&quot;widget-wrap&quot;&gt;</span><br><span class="line">    &lt;h3 class=&quot;widget-title&quot;&gt;About&lt;/h3&gt;</span><br><span class="line">    &lt;div class=&quot;widget&quot;&gt;</span><br><span class="line">      E-mail: shuo.han@cern.ch</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure></p>
+<p>然后在主题配置的侧边栏中加上：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">widgets:</span><br><span class="line">- ...</span><br><span class="line">- about</span><br></pre></td></tr></table></figure></p>
+<h3 id="打开-RSS-订阅"><a href="#打开-RSS-订阅" class="headerlink" title="打开 RSS 订阅"></a>打开 RSS 订阅</h3><p>执行 <code>npm install hexo-generator-feed</code><br>然后在主配置文件 <code>_config.yml</code> 里面加上<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">plugin:</span><br><span class="line">- hexo-generator-feed</span><br><span class="line">feed:</span><br><span class="line">type: atom</span><br><span class="line">path: atom.xml</span><br><span class="line">limit: 20</span><br></pre></td></tr></table></figure></p>
+<h3 id="高级修改"><a href="#高级修改" class="headerlink" title="高级修改"></a>高级修改</h3><p>Hexo的网页其实是被拆开成很多零件的，主要在<code>themes/landscape/layout/_partial/</code>，<br>比如对Gitment来说（关于Gitment见<a href="https://imsun.net/posts/gitment-introduction/" target="_blank" rel="noopener">此教程</a>），首先要打开 <code>head.ejs</code> 引用js, css文件（需放入<code>themes/landscape/source</code>）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;/css/gitment.css&quot;&gt;</span><br><span class="line">&lt;script src=&quot;/js/gitment.browser.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure></p>
+<p>然后在 <code>article.ejs</code> 里面加上 Gitment 的code<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;% if (!index &amp;&amp; post.comments)&#123; %&gt;</span><br><span class="line">  &lt;section id=&quot;comments&quot;&gt;</span><br><span class="line">  &lt;div id=&quot;gitment&quot;&gt;&lt;/div&gt;</span><br><span class="line">      &lt;script&gt;</span><br><span class="line">      const gitment = new Gitment(&#123;</span><br><span class="line">        owner: &apos;username&apos;,</span><br><span class="line">        repo: &apos;username.github.io&apos;,</span><br><span class="line">        oauth: &#123;</span><br><span class="line">        client_id: &apos;---yourID---&apos;,</span><br><span class="line">        client_secret: &apos;---yourKey---&apos;,</span><br><span class="line">        &#125;,</span><br><span class="line">      &#125;)</span><br><span class="line">      gitment.render(&apos;gitment&apos;)</span><br><span class="line">      &lt;/script&gt;</span><br><span class="line">&lt;/section&gt;</span><br><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure></p>
+<p>就实现第三方功能了。<br>主题自带的功能也可以改，比如说分享功能可以在<code>themes/landscape/source/js/script.js</code>加一句，<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&apos;&lt;a href=&quot;http://service.weibo.com/share/share.php?&amp;title=&apos; + encodedUrl + &apos;&quot; class=&quot;article-share-sina&quot; target=&quot;_blank&quot; title=&quot;微博&quot;&gt;&lt;/a&gt;&apos;</span><br></pre></td></tr></table></figure></p>
+<p>然后找到<code>themes/landscape/source/css/_partial/article.styl</code> 定义一个<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">.article-share-sina</span><br><span class="line">  @extend $article-share-link</span><br><span class="line">  &amp;:before</span><br><span class="line">    content: &quot;\f18a&quot;</span><br><span class="line">  &amp;:hover</span><br><span class="line">    background: color-google</span><br><span class="line">    text-shadow: 0 1px darken(color-google, 20%)</span><br></pre></td></tr></table></figure></p>
+<p>就可以了。像这种高级修改，对有一定网页知识的人来说有无限可能，自己做一个主题都是可以的。</p>
+<h3 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h3><p>遇到问题可以用谷歌，Safari等浏览器查看一下编译有没有error。</p>
+<h2 id="本站的Hexo设置"><a href="#本站的Hexo设置" class="headerlink" title="本站的Hexo设置"></a>本站的Hexo设置</h2><ul>
+<li>默认主题 Landscape。</li>
+<li>抬头图片位置：<code>themes/landscape/source/css/images/banner.jpg</code></li>
+<li>评论系统为Gitment，需要编辑<code>themes/landscape/layout/_partial/</code> 中的 <code>article.ejs</code> 和 <code>head.ejs</code>。<ul>
+<li>评论按钮可能导致Gitment不稳定，已取消。</li>
+</ul>
+</li>
+<li>分享按钮为自带按钮，包括Sina+Facebook（改 <code>themes/landscape/source/js/script.js</code> 和 <code>themes/landscape/source/css/_partial/article.styl</code>）。</li>
+<li>jquery.min.js 路径从google改为 <a href="https://cdn.bootcss.com/jquery/2.0.3/jquery.min.js" target="_blank" rel="noopener">https://cdn.bootcss.com/jquery/2.0.3/jquery.min.js</a> (改 <code>after-footer.ejs</code>)</li>
+</ul>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://hans2936.github.io/2018/06/06/HexoLog/" data-id="cji53jh3k0000kd0u64wixhi1" class="article-share-link">分享</a>
+      <a data-url="https://hans2936.github.io/2018/06/06/HexoLog/" data-id="cji56jzib0001ss0uqrbkv0fs" class="article-share-link">分享</a>
       
 	<!-- <a href="https://hans2936.github.io/2018/06/06/HexoLog/#gitment" class="article-comment-link">评论</a> -->
       
