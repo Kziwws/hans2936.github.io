@@ -9,11 +9,11 @@
 
 抬头图片位置：`themes/landscape/source/css/images/banner.jpg`
 
-评论系统为Gitment，需要编辑`themes/landscape/layout/_partial/` 中的 `article.ejs` 和 `head.ejs`。评论按钮可能导致Gitment不稳定，已取消。
+评论系统为Gitment，需要编辑`themes/landscape/layout/_partial/` 中的 `article.ejs` 和 `head.ejs`。
 
 分享按钮为自带按钮，包括Sina+Facebook（改 `themes/landscape/source/js/script.js` 和 `themes/landscape/source/css/_partial/article.styl`）。
 
-jquery.min.js 路径从google改为 https://cdn.bootcss.com/jquery/2.0.3/jquery.min.js (改 `after-footer.ejs`)
+jquery.min.js 路径从google改为 https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js (改 `after-footer.ejs`)
 
 
 ## 个人简介
