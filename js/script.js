@@ -1,5 +1,6 @@
 (function($){
   // Search
+ /*
   var $searchWrap = $('#search-form-wrap'),
     isSearchAnim = false,
     searchAnimDuration = 200;
@@ -30,7 +31,7 @@
     $searchWrap.removeClass('on');
     stopSearchAnim();
   });
-
+*/
   // Share
   $('body').on('click', function(){
     $('.article-share-box.on').removeClass('on');

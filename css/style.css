@@ -110,6 +110,9 @@ button::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
+input::-webkit-input-placeholder {
+  font-size: 16px;
+}
 @font-face {
   font-family: FontAwesome;
   font-style: normal;
@@ -444,8 +447,30 @@ body {
 #nav-search-btn:before {
   content: "\f002";
 }
-#nav-close:before {
-  content: "\f410";
+#icon-search:before {
+  font-family: FontAwesome;
+  content: "\f002";
+  font-size: x-large;
+}
+#icon-close:before {
+  font-family: FontAwesome;
+  content: "\f146";
+  font-size: x-large;
+}
+#icon-search-large:before {
+  font-family: FontAwesome;
+  content: "\f002";
+  font-size: xx-large;
+}
+#icon-spinner:before {
+  font-family: FontAwesome;
+  content: "\f110";
+  font-size: xx-large;
+}
+#icon-frown:before {
+  font-family: FontAwesome;
+  content: "\f119";
+  font-size: xx-large;
 }
 #search-form-wrap {
   position: absolute;
@@ -1300,13 +1325,18 @@ pre .javascript .function {
     color: #fff;
   }
 }
+.local-search-inner {
+  position: relative;
+  z-index: 2090;
+  border-radius: 0;
+}
 .local-search-pop-overlay {
   position: fixed;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 2080;
+/*z-index: 2080*/
   background-color: rgba(0,0,0,0.3);
 }
 .local-search-popup {
@@ -1380,6 +1410,7 @@ mobile()
   width: 18px;
   padding-left: 10px;
   padding-right: 10px;
+  padding-top: 5px;
 }
 .local-search-popup .search-icon {
   float: left;
@@ -1399,6 +1430,17 @@ mobile()
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   color: #ccc;
+}
+@media (max-width: 767px) {
+  .local-search-popup {
+    padding: 0;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
 }
 @media screen and (min-width: 768px) {
   #sidebar {

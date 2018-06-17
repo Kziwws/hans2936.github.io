@@ -5,16 +5,12 @@
 **本站采用[知识共享署名-非商业性使用 3.0 中国大陆许可协议](http://creativecommons.org/licenses/by-nc/3.0/cn/)进行许可。**
 
 ## Hexo设置
-默认主题 Landscape。
-
-抬头图片位置：`themes/landscape/source/css/images/banner.jpg`
-
-评论系统为Gitment，需要编辑`themes/landscape/layout/_partial/` 中的 `article.ejs` 和 `head.ejs`。
-
-分享按钮为自带按钮，包括Sina+Facebook（改 `themes/landscape/source/js/script.js` 和 `themes/landscape/source/css/_partial/article.styl`）。
-
-jquery.min.js 路径从google改为 https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js (改 `after-footer.ejs`)
-
+- 默认主题 Landscape。
+- 抬头图片位置`banner.jpg`：我家的猫。
+- 评论系统为Gitment，需要引用`gitment.css`, `gitment.broser.js`， 并编辑 `article.ejs` 和 `head.ejs`。
+- 分享按钮为自带按钮，包括Sina（改 `script.js` 和 `article.styl`）。
+- jquery.min.js 路径从google改为 https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js (改 `after-footer.ejs`)。
+- 从 NexT 主题移植而来的本地搜索引擎。
 
 ## 个人简介
 ### 工作
