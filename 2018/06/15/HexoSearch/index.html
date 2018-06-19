@@ -5,21 +5,21 @@
   
 
   
-  <title>Hexo 进阶：从 NexT 主题移植本地搜索到 Landscape 主题 | 韩朔的博客</title>
+  <title>Hexo 进阶：移植 NexT 主题的本地搜索到 Landscape 主题 | 韩朔的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Hexo 默认的 Landscape 主题其实已经很好了，可以说简明美观，网页上的元素也不难添加。但是美中不足的就是用了谷歌搜索引擎，谷歌在国内打不开就不说了，而且用外部搜索引擎本来也不如站内搜索便捷实用。后来我发现 NexT 主题是有站内搜索功能的，就试着把这个功能移植了进来。 本地搜索的原理对于动态网站来说，本地搜索不是很困难，可以通过 php 实现（具体见我的简书）。但是，GitHub博客是">
+  <meta name="description" content="Hexo 默认的 Landscape 主题其实已经很好了，可以说简明美观，网页上的元素也不难添加。但是美中不足的就是用了谷歌搜索引擎，谷歌在国内打不开就不说了，而且用外部搜索引擎本来也不如站内搜索便捷实用。后来我发现 NexT 主题是有站内搜索功能的，就试着把这个功能移植了进来。 本地搜索的原理对于动态网站来说，本地搜索不是很困难，可以通过 php 实现（具体见这篇文章）。但是，GitHub博客是">
 <meta name="keywords" content="Hexo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo 进阶：从 NexT 主题移植本地搜索到 Landscape 主题">
+<meta property="og:title" content="Hexo 进阶：移植 NexT 主题的本地搜索到 Landscape 主题">
 <meta property="og:url" content="https://hans2936.github.io/2018/06/15/HexoSearch/index.html">
 <meta property="og:site_name" content="韩朔的博客">
-<meta property="og:description" content="Hexo 默认的 Landscape 主题其实已经很好了，可以说简明美观，网页上的元素也不难添加。但是美中不足的就是用了谷歌搜索引擎，谷歌在国内打不开就不说了，而且用外部搜索引擎本来也不如站内搜索便捷实用。后来我发现 NexT 主题是有站内搜索功能的，就试着把这个功能移植了进来。 本地搜索的原理对于动态网站来说，本地搜索不是很困难，可以通过 php 实现（具体见我的简书）。但是，GitHub博客是">
+<meta property="og:description" content="Hexo 默认的 Landscape 主题其实已经很好了，可以说简明美观，网页上的元素也不难添加。但是美中不足的就是用了谷歌搜索引擎，谷歌在国内打不开就不说了，而且用外部搜索引擎本来也不如站内搜索便捷实用。后来我发现 NexT 主题是有站内搜索功能的，就试着把这个功能移植了进来。 本地搜索的原理对于动态网站来说，本地搜索不是很困难，可以通过 php 实现（具体见这篇文章）。但是，GitHub博客是">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://hans2936.github.io/2018/06/15/HexoSearch/HexoSearch.jpg">
-<meta property="og:updated_time" content="2018-06-17T01:35:34.569Z">
+<meta property="og:updated_time" content="2018-06-19T00:02:56.843Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo 进阶：从 NexT 主题移植本地搜索到 Landscape 主题">
-<meta name="twitter:description" content="Hexo 默认的 Landscape 主题其实已经很好了，可以说简明美观，网页上的元素也不难添加。但是美中不足的就是用了谷歌搜索引擎，谷歌在国内打不开就不说了，而且用外部搜索引擎本来也不如站内搜索便捷实用。后来我发现 NexT 主题是有站内搜索功能的，就试着把这个功能移植了进来。 本地搜索的原理对于动态网站来说，本地搜索不是很困难，可以通过 php 实现（具体见我的简书）。但是，GitHub博客是">
+<meta name="twitter:title" content="Hexo 进阶：移植 NexT 主题的本地搜索到 Landscape 主题">
+<meta name="twitter:description" content="Hexo 默认的 Landscape 主题其实已经很好了，可以说简明美观，网页上的元素也不难添加。但是美中不足的就是用了谷歌搜索引擎，谷歌在国内打不开就不说了，而且用外部搜索引擎本来也不如站内搜索便捷实用。后来我发现 NexT 主题是有站内搜索功能的，就试着把这个功能移植了进来。 本地搜索的原理对于动态网站来说，本地搜索不是很困难，可以通过 php 实现（具体见这篇文章）。但是，GitHub博客是">
 <meta name="twitter:image" content="https://hans2936.github.io/2018/06/15/HexoSearch/HexoSearch.jpg">
   
     <link rel="alternate" href="/atom.xml" title="韩朔的博客" type="application/atom+xml">
@@ -117,7 +117,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Hexo 进阶：从 NexT 主题移植本地搜索到 Landscape 主题
+      Hexo 进阶：移植 NexT 主题的本地搜索到 Landscape 主题
     </h1>
   
 
@@ -126,10 +126,10 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>Hexo 默认的 Landscape 主题其实已经很好了，可以说简明美观，网页上的元素也不难添加。<br>但是美中不足的就是用了谷歌搜索引擎，谷歌在国内打不开就不说了，而且用外部搜索引擎本来也不如站内搜索便捷实用。<br>后来我发现 NexT 主题是有站内搜索功能的，就试着把这个功能移植了进来。</p>
-<h2 id="本地搜索的原理"><a href="#本地搜索的原理" class="headerlink" title="本地搜索的原理"></a>本地搜索的原理</h2><p>对于动态网站来说，本地搜索不是很困难，可以通过 php 实现（具体见<a href="https://www.jianshu.com/p/2ff5e11e849c" target="_blank" rel="noopener">我的简书</a>）。<br>但是，GitHub博客是静态网站，用不了 php，导致我最后只能把google搜索结果页内置到了网站里面 （Landscape也用了谷歌）。</p>
+<h2 id="本地搜索的原理"><a href="#本地搜索的原理" class="headerlink" title="本地搜索的原理"></a>本地搜索的原理</h2><p>对于动态网站来说，本地搜索不是很困难，可以通过 php 实现（具体见<a href="https://www.jianshu.com/p/2ff5e11e849c" target="_blank" rel="noopener">这篇文章</a>）。<br>但是，GitHub博客是静态网站，用不了 php，导致我最后只能把google搜索结果页内置到了网站里面 （Landscape也用了谷歌）。</p>
 <p>NexT 主题实现这个功能，用了 Hexo 的拓展包 <code>hexo-generator-searchdb</code>，它预先生成了一个文本库<code>search.xml</code>，然后传到了网站里面 。在本地搜索的时候，NexT直接用javascript调用了这个文件，从而实现了静态网站的本地搜索。</p>
 <a id="more"></a>
-<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>首先把产生文本库的包装上 <code>npm install hexo-generator-searchdb --save</code>。<br>然后在主配置文件 <code>_config.yml</code>里面加上<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  limit: 10000</span><br></pre></td></tr></table></figure></p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>首先把产生文本库的包安装好，执行 <code>npm install hexo-generator-searchdb --save</code>。<br>然后在主配置文件 <code>_config.yml</code>里面加上<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  limit: 10000</span><br></pre></td></tr></table></figure></p>
 <p>并且在主题配置文件加上<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">local_search:</span><br><span class="line">  enable: true</span><br><span class="line">  trigger: auto</span><br><span class="line">  top_n_per_article: 1</span><br></pre></td></tr></table></figure></p>
 <p>其中<code>trigger</code>表示搜索结果会不会打字时自动显示，<code>top_n_per_article</code> 表示每篇文章最多显示几条结果（-1为不限数字）。<br>这些只是准备工作，在把代码放到Landscape 之前，这些设置不会起任何作用。</p>
 <h2 id="NexT-主题的本地搜索代码"><a href="#NexT-主题的本地搜索代码" class="headerlink" title="NexT 主题的本地搜索代码"></a>NexT 主题的本地搜索代码</h2><p>NexT 主题的 local-search 主要是下面几个模块组成的：</p>
@@ -173,7 +173,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://hans2936.github.io/2018/06/15/HexoSearch/" data-id="cjii63eyu0001nb0ufv67nots" class="article-share-link">分享</a>
+      <a data-url="https://hans2936.github.io/2018/06/15/HexoSearch/" data-id="cjikxpo450005pz0ugqme1jsq" class="article-share-link">分享</a>
       
 	<!-- <a href="https://hans2936.github.io/2018/06/15/HexoSearch/#gitment" class="article-comment-link">评论</a> -->
       
@@ -186,10 +186,19 @@
     
 <nav id="article-nav">
   
+    <a href="/2018/06/19/EuroTrip/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          欧洲行
+        
+      </div>
+    </a>
+  
   
     <a href="/2018/06/06/HexoLog/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">使用 Hexo 搭建本站</div>
+      <div class="article-nav-title">Hexo 初步：在 GitHub Pages 搭建个人博客</div>
     </a>
   
 </nav>
@@ -221,7 +230,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">分类</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/编程/">编程</a></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/旅行/">旅行</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/编程/">编程</a></li></ul>
     </div>
   </div>
 
@@ -231,7 +240,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a>
+      <a href="/tags/Hexo/" style="font-size: 20px;">Hexo</a> <a href="/tags/旅行/" style="font-size: 10px;">旅行</a>
     </div>
   </div>
 
@@ -253,11 +262,15 @@
       <ul>
         
           <li>
-            <a href="/2018/06/15/HexoSearch/">Hexo 进阶：从 NexT 主题移植本地搜索到 Landscape 主题</a>
+            <a href="/2018/06/19/EuroTrip/">欧洲行</a>
           </li>
         
           <li>
-            <a href="/2018/06/06/HexoLog/">使用 Hexo 搭建本站</a>
+            <a href="/2018/06/15/HexoSearch/">Hexo 进阶：移植 NexT 主题的本地搜索到 Landscape 主题</a>
+          </li>
+        
+          <li>
+            <a href="/2018/06/06/HexoLog/">Hexo 初步：在 GitHub Pages 搭建个人博客</a>
           </li>
         
       </ul>

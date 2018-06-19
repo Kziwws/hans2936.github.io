@@ -5,19 +5,19 @@
   
 
   
-  <title>使用 Hexo 搭建本站 | 韩朔的博客</title>
+  <title>Hexo 初步：在 GitHub Pages 搭建个人博客 | 韩朔的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="最近用 Hexo 搭建了工作网站 CERN:Shuo Han，发现这个工具发文章就像是发朋友圈一样简单。虽然我以前用网页拼凑我的老网站花了很多时间，但我还是决定换了，写作和发布体验还是很重要的。我的理解是，这是一个自动生成静态（html+css+js）网站的工具，主题里是很多模块化的网页，可以通过.yml配置文件运用这些模块，把MarkDown(.md)博客批量转化为网页并且跟主页形成总分结构。下">
 <meta name="keywords" content="Hexo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="使用 Hexo 搭建本站">
+<meta property="og:title" content="Hexo 初步：在 GitHub Pages 搭建个人博客">
 <meta property="og:url" content="https://hans2936.github.io/2018/06/06/HexoLog/index.html">
 <meta property="og:site_name" content="韩朔的博客">
 <meta property="og:description" content="最近用 Hexo 搭建了工作网站 CERN:Shuo Han，发现这个工具发文章就像是发朋友圈一样简单。虽然我以前用网页拼凑我的老网站花了很多时间，但我还是决定换了，写作和发布体验还是很重要的。我的理解是，这是一个自动生成静态（html+css+js）网站的工具，主题里是很多模块化的网页，可以通过.yml配置文件运用这些模块，把MarkDown(.md)博客批量转化为网页并且跟主页形成总分结构。下">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-06-16T23:36:27.971Z">
+<meta property="og:updated_time" content="2018-06-19T00:06:17.419Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="使用 Hexo 搭建本站">
+<meta name="twitter:title" content="Hexo 初步：在 GitHub Pages 搭建个人博客">
 <meta name="twitter:description" content="最近用 Hexo 搭建了工作网站 CERN:Shuo Han，发现这个工具发文章就像是发朋友圈一样简单。虽然我以前用网页拼凑我的老网站花了很多时间，但我还是决定换了，写作和发布体验还是很重要的。我的理解是，这是一个自动生成静态（html+css+js）网站的工具，主题里是很多模块化的网页，可以通过.yml配置文件运用这些模块，把MarkDown(.md)博客批量转化为网页并且跟主页形成总分结构。下">
   
     <link rel="alternate" href="/atom.xml" title="韩朔的博客" type="application/atom+xml">
@@ -115,7 +115,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      使用 Hexo 搭建本站
+      Hexo 初步：在 GitHub Pages 搭建个人博客
     </h1>
   
 
@@ -123,7 +123,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>最近用 Hexo 搭建了工作网站 <a href="https://cern.ch/shhan" target="_blank" rel="noopener">CERN:Shuo Han</a>，发现这个工具发文章就像是发朋友圈一样简单。虽然我以前用网页拼凑<a href="https://github.com/hans2936/Hans_Blog_Old" target="_blank" rel="noopener">我的老网站</a>花了很多时间，但我还是决定换了，写作和发布体验还是很重要的。<br>我的理解是，这是一个自动生成静态（html+css+js）网站的工具，主题里是很多模块化的网页，可以通过.yml配置文件运用这些模块，把MarkDown(.md)博客批量转化为网页并且跟主页形成总分结构。<br>下面是搭建的过程和本站配置：</p>
+        <p>最近用 Hexo 搭建了工作网站 <a href="https://cern.ch/shhan" target="_blank" rel="noopener">CERN:Shuo Han</a>，发现这个工具发文章就像是发朋友圈一样简单。虽然我以前用网页拼凑<a href="https://github.com/hans2936/Hans_Blog_Old" target="_blank" rel="noopener">我的老网站</a>花了很多时间，但我还是决定换了，写作和发布体验还是很重要的。<br>我的理解是，这是一个自动生成静态（html+css+js）网站的工具，主题里是很多模块化的网页，可以通过.yml配置文件运用这些模块，把MarkDown(.md)博客批量转化为网页并且跟主页形成总分结构。<br>下面是我用Hexo搭建个人网站的过程和网站配置：</p>
 <p>首先，一切以<a href="https://hexo.io/zh-cn/index.html" target="_blank" rel="noopener">Hexo官网</a>为准。</p>
 <h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><ul>
 <li>正常使用Github的电脑。</li>
@@ -165,6 +165,7 @@
 <p>会在 <code>source/about</code> 里面产生新文件，跟文章是一样编辑的。<br>然后再从主题配置的导航栏里面加上这一页。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  ...</span><br><span class="line">  关于: /about</span><br></pre></td></tr></table></figure></p>
 <h3 id="引用图片"><a href="#引用图片" class="headerlink" title="引用图片"></a>引用图片</h3><p>执行 <code>npm install hexo-asset-image --save</code><br>然后，主配置文件 <code>_config.yml</code> 设置为<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">post_asset_folder: true</span><br></pre></td></tr></table></figure></p>
 <p>这个时候创建新文章就会产生一个同名文件夹，把图片放入即可。<br>然后在文章正文这样引用放进去的图片。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![图片描述](文章名/图片名)</span><br></pre></td></tr></table></figure></p>
+<h3 id="引用视频"><a href="#引用视频" class="headerlink" title="引用视频"></a>引用视频</h3><p>直接用 <code>iframe</code> 就可以了，比如说：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;iframe src=&quot;&quot; height=500 width=100% scrolling=&quot;no&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot;&gt; &lt;/iframe&gt;</span><br></pre></td></tr></table></figure></p>
 <h3 id="创建侧边栏"><a href="#创建侧边栏" class="headerlink" title="创建侧边栏"></a>创建侧边栏</h3><p>比如在 <code>themes/landscape/layout/_widget/</code> 创建一个 about.ejs<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;% if (site.tags.length)&#123; %&gt;</span><br><span class="line">  &lt;div class=&quot;widget-wrap&quot;&gt;</span><br><span class="line">    &lt;h3 class=&quot;widget-title&quot;&gt;About&lt;/h3&gt;</span><br><span class="line">    &lt;div class=&quot;widget&quot;&gt;</span><br><span class="line">      E-mail: shuo.han@cern.ch</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure></p>
 <p>然后在主题配置的侧边栏中加上：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">widgets:</span><br><span class="line">- ...</span><br><span class="line">- about</span><br></pre></td></tr></table></figure></p>
 <h3 id="RSS-订阅"><a href="#RSS-订阅" class="headerlink" title="RSS 订阅"></a>RSS 订阅</h3><p>执行 <code>npm install hexo-generator-feed</code><br>然后在主配置文件 <code>_config.yml</code> 里面加上<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">plugin:</span><br><span class="line">- hexo-generator-feed</span><br><span class="line">feed:</span><br><span class="line">type: atom</span><br><span class="line">path: atom.xml</span><br><span class="line">limit: 20</span><br></pre></td></tr></table></figure></p>
@@ -191,7 +192,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://hans2936.github.io/2018/06/06/HexoLog/" data-id="cjii63ez00002nb0uz984v9fs" class="article-share-link">分享</a>
+      <a data-url="https://hans2936.github.io/2018/06/06/HexoLog/" data-id="cjikxpo410002pz0udmgzn41b" class="article-share-link">分享</a>
       
 	<!-- <a href="https://hans2936.github.io/2018/06/06/HexoLog/#gitment" class="article-comment-link">评论</a> -->
       
@@ -208,7 +209,7 @@
       <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
-          Hexo 进阶：从 NexT 主题移植本地搜索到 Landscape 主题
+          Hexo 进阶：移植 NexT 主题的本地搜索到 Landscape 主题
         
       </div>
     </a>
@@ -243,7 +244,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">分类</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/编程/">编程</a></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/旅行/">旅行</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/编程/">编程</a></li></ul>
     </div>
   </div>
 
@@ -253,7 +254,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a>
+      <a href="/tags/Hexo/" style="font-size: 20px;">Hexo</a> <a href="/tags/旅行/" style="font-size: 10px;">旅行</a>
     </div>
   </div>
 
@@ -275,11 +276,15 @@
       <ul>
         
           <li>
-            <a href="/2018/06/15/HexoSearch/">Hexo 进阶：从 NexT 主题移植本地搜索到 Landscape 主题</a>
+            <a href="/2018/06/19/EuroTrip/">欧洲行</a>
           </li>
         
           <li>
-            <a href="/2018/06/06/HexoLog/">使用 Hexo 搭建本站</a>
+            <a href="/2018/06/15/HexoSearch/">Hexo 进阶：移植 NexT 主题的本地搜索到 Landscape 主题</a>
+          </li>
+        
+          <li>
+            <a href="/2018/06/06/HexoLog/">Hexo 初步：在 GitHub Pages 搭建个人博客</a>
           </li>
         
       </ul>
