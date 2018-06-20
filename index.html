@@ -130,7 +130,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://hans2936.github.io/2018/06/19/EuroTrip/" data-id="cjimuu7c700001d0ugy2a9ua4" class="article-share-link">分享</a>
+      <a data-url="https://hans2936.github.io/2018/06/19/EuroTrip/" data-id="cjinoy53o0002nw0ufe4iz9f5" class="article-share-link">分享</a>
       
 	<!-- <a href="https://hans2936.github.io/2018/06/19/EuroTrip/#gitment" class="article-comment-link">评论</a> -->
       
@@ -163,7 +163,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/06/15/HexoSearch/">Hexo 进阶：移植 NexT 主题的本地搜索到 Landscape 主题</a>
+      <a class="article-title" href="/2018/06/15/HexoSearch/">Github Pages(四)：Hexo进阶-NexT本地搜索引擎的移植</a>
     </h1>
   
 
@@ -172,7 +172,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>Hexo 默认的 Landscape 主题其实已经很好了，可以说简明美观，网页上的元素也不难添加。<br>但是美中不足的就是用了谷歌搜索引擎，谷歌在国内打不开就不说了，而且用外部搜索引擎本来也不如站内搜索便捷实用。<br>后来我发现 NexT 主题是有站内搜索功能的，就试着把这个功能移植了进来。</p>
-<h2 id="本地搜索的原理"><a href="#本地搜索的原理" class="headerlink" title="本地搜索的原理"></a>本地搜索的原理</h2><p>对于动态网站来说，本地搜索不是很困难，可以通过 php 实现（具体见<a href="https://www.jianshu.com/p/2ff5e11e849c" target="_blank" rel="noopener">这篇文章</a>）。<br>但是，GitHub博客是静态网站，用不了 php，导致我最后只能把google搜索结果页内置到了网站里面 （Landscape也用了谷歌）。</p>
+<h2 id="本地搜索的原理"><a href="#本地搜索的原理" class="headerlink" title="本地搜索的原理"></a>本地搜索的原理</h2><p>对于动态网站来说，可以通过 php 实现（具体见<a href="https://www.jianshu.com/p/2ff5e11e849c" target="_blank" rel="noopener">Github Pages(二)：个人网站的功能插件</a>）。<br>但是，GitHub博客是静态网站，用不了 php，导致我在老网站只能把google搜索结果页内置到了网站里面 （Landscape也用了谷歌）。</p>
 <p>NexT 主题实现这个功能，用了 Hexo 的拓展包 <code>hexo-generator-searchdb</code>，它预先生成了一个文本库<code>search.xml</code>，然后传到了网站里面 。在本地搜索的时候，NexT直接用javascript调用了这个文件，从而实现了静态网站的本地搜索。</p>
         
           <p class="article-more-link">
@@ -183,12 +183,12 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://hans2936.github.io/2018/06/15/HexoSearch/" data-id="cjimuu7cj00051d0uavkyqlez" class="article-share-link">分享</a>
+      <a data-url="https://hans2936.github.io/2018/06/15/HexoSearch/" data-id="cjinoy53s0005nw0ufviijzjd" class="article-share-link">分享</a>
       
 	<!-- <a href="https://hans2936.github.io/2018/06/15/HexoSearch/#gitment" class="article-comment-link">评论</a> -->
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Github-Pages/">Github Pages</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
 
     </footer>
   </div>
@@ -216,7 +216,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/06/06/HexoLog/">Hexo 初步：在 GitHub Pages 搭建个人博客</a>
+      <a class="article-title" href="/2018/06/06/HexoLog/">Github Pages(三)：使用Hexo博客生成工具</a>
     </h1>
   
 
@@ -228,7 +228,7 @@
 <p>首先，一切以<a href="https://hexo.io/zh-cn/index.html" target="_blank" rel="noopener">Hexo官网</a>为准。</p>
 <h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><ul>
 <li>正常使用Github的电脑。</li>
-<li>开了Github Pages的Repository。<br>如果不了解Github可以看<a href="https://www.jianshu.com/p/f82c76b90336" target="_blank" rel="noopener">这篇文章</a>。</li>
+<li>开了Github Pages的Repository。<br>如果不了解Github可以看<a href="https://www.jianshu.com/p/f82c76b90336" target="_blank" rel="noopener">Github Pages(一)：一个最基础的个人网站</a>。</li>
 </ul>
         
           <p class="article-more-link">
@@ -239,12 +239,119 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://hans2936.github.io/2018/06/06/HexoLog/" data-id="cjimuu7cd00021d0uor24i5s2" class="article-share-link">分享</a>
+      <a data-url="https://hans2936.github.io/2018/06/06/HexoLog/" data-id="cjinoy53k0000nw0un7x8wkj1" class="article-share-link">分享</a>
       
 	<!-- <a href="https://hans2936.github.io/2018/06/06/HexoLog/#gitment" class="article-comment-link">评论</a> -->
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Github-Pages/">Github Pages</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-PageLog" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/10/22/PageLog/" class="article-date">
+  <time datetime="2017-10-21T23:55:42.000Z" itemprop="datePublished">2017-10-22</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/编程/">编程</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/10/22/PageLog/">Github Pages(二)：个人网站的功能插件</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>在<a href="">Github Pages(一)：一个最基础的个人网站</a>中，我们已经介绍了怎样用Github Pages做出一个网站框架，例如完全重复出 <a href="https://html5up.net" target="_blank" rel="noopener">HTML5 UP</a> 网站上的某个模版。在熟悉该模版之后，你就已经可以编写博客页(html)，并且链接到首页了。甚至可以有出色的排版与配图。</p>
+<p>但对一个博客网站来说这样还不够，很多互动功能也是需要手动添加、单独理解的，包括评论框、搜索栏、点击量计数、分享按钮、网站导航、网页排版和图片滚动等。</p>
+<p>这一篇文章是一个大合集，总结我曾经见到的个人网站互动功能，以及各个解决方案的优劣。</p>
+<p>注意：虽然列出了这么多插件，但是这些只是技术储备，如果你是一个网站新手，建议先阅读<a href="https://hans2936.github.io/2018/06/06/HexoLog/">Github Pages(三)：使用Hexo博客生成工具</a>。</p>
+        
+          <p class="article-more-link">
+            <!-- <a href="/2017/10/22/PageLog/#more">阅读全文</a> -->
+	    <a href="/2017/10/22/PageLog/">阅读全文</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://hans2936.github.io/2017/10/22/PageLog/" data-id="cjinoy54x000knw0umt43hkwn" class="article-share-link">分享</a>
+      
+	<!-- <a href="https://hans2936.github.io/2017/10/22/PageLog/#gitment" class="article-comment-link">评论</a> -->
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Github-Pages/">Github Pages</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-PageBasic" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/10/21/PageBasic/" class="article-date">
+  <time datetime="2017-10-20T23:55:42.000Z" itemprop="datePublished">2017-10-21</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/编程/">编程</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/10/21/PageBasic/">Github Pages(一)：一个最基础的个人网站</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>一直想做个博客网站，去网上查了一下，最先查出来的是云服务器+WordPress，不过又要买服务器，又要买域名，还得备案。<br>后来发现每个Github账户都可以开一个自己的静态网站（域名为 username.github.io），非常简单。<br>静态网站的定义参见<a href="https://zh.wikipedia.org/wiki/网页设计" target="_blank" rel="noopener">维基百科-网页设计</a>，虽然方便，但是也有一些功能上的限制，最显著的特点就是不能运行php和asp，不能自动读写站内的文件。<br>不过静态网页依然可以实现个人博客需要的所有功能，而我也只是学习一下做网页、博客什么的，这个方案已经是最好的了。</p>
+<p>这篇博客介绍搭建一个基于html的网站框架的过程。</p>
+<h2 id="拥有并了解Github-账户"><a href="#拥有并了解Github-账户" class="headerlink" title="拥有并了解Github 账户"></a>拥有并了解Github 账户</h2><h3 id="第一步-注册"><a href="#第一步-注册" class="headerlink" title="第一步 注册"></a>第一步 注册</h3><p>没啥好说的，进入<a href="https://github.com" target="_blank" rel="noopener">https://github.com</a>，然后注册一个账户就可以了。</p>
+        
+          <p class="article-more-link">
+            <!-- <a href="/2017/10/21/PageBasic/#more">阅读全文</a> -->
+	    <a href="/2017/10/21/PageBasic/">阅读全文</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://hans2936.github.io/2017/10/21/PageBasic/" data-id="cjinoy54z000lnw0u1zf6bf7j" class="article-share-link">分享</a>
+      
+	<!-- <a href="https://hans2936.github.io/2017/10/21/PageBasic/#gitment" class="article-comment-link">评论</a> -->
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Github-Pages/">Github Pages</a></li></ul>
 
     </footer>
   </div>
@@ -274,7 +381,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Hexo/" style="font-size: 20px;">Hexo</a> <a href="/tags/旅行/" style="font-size: 10px;">旅行</a>
+      <a href="/tags/Github-Pages/" style="font-size: 20px;">Github Pages</a> <a href="/tags/Hexo/" style="font-size: 15px;">Hexo</a> <a href="/tags/旅行/" style="font-size: 10px;">旅行</a>
     </div>
   </div>
 
@@ -283,7 +390,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">十月 2017</a></li></ul>
     </div>
   </div>
 
@@ -300,11 +407,19 @@
           </li>
         
           <li>
-            <a href="/2018/06/15/HexoSearch/">Hexo 进阶：移植 NexT 主题的本地搜索到 Landscape 主题</a>
+            <a href="/2018/06/15/HexoSearch/">Github Pages(四)：Hexo进阶-NexT本地搜索引擎的移植</a>
           </li>
         
           <li>
-            <a href="/2018/06/06/HexoLog/">Hexo 初步：在 GitHub Pages 搭建个人博客</a>
+            <a href="/2018/06/06/HexoLog/">Github Pages(三)：使用Hexo博客生成工具</a>
+          </li>
+        
+          <li>
+            <a href="/2017/10/22/PageLog/">Github Pages(二)：个人网站的功能插件</a>
+          </li>
+        
+          <li>
+            <a href="/2017/10/21/PageBasic/">Github Pages(一)：一个最基础的个人网站</a>
           </li>
         
       </ul>
