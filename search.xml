@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[欧洲行]]></title>
     <url>%2F2018%2F06%2F19%2FEuroTrip%2F</url>
-    <content type="text"><![CDATA[慕尼黑-汉堡-巴黎-柏林四月-五月春游，开心。视频：(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":true,"video":{"url":"https://hans-blog-video.oss-cn-beijing.aliyuncs.com/%E6%AC%A7%E6%B4%B2%E8%A1%8C%28%E7%A7%92%E6%8B%8D%29.mp4","pic":"https://hans2936.github.io/2018/06/19/EuroTrip/Hohenschwangau.jpg"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
+    <content type="text"><![CDATA[慕尼黑-汉堡-巴黎-柏林四月-五月春游，开心。(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":true,"video":{"url":"https://hans-blog-video.oss-cn-beijing.aliyuncs.com/%E6%AC%A7%E6%B4%B2%E8%A1%8C%28%E7%A7%92%E6%8B%8D%29.mp4","pic":"https://hans2936.github.io/2018/06/19/EuroTrip/Hohenschwangau.jpg"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})() 点击加载视频]]></content>
       <categories>
         <category>旅行</category>
       </categories>
