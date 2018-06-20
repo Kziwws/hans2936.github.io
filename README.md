@@ -10,7 +10,7 @@
 - 评论系统为Gitment，需要引用`gitment.css`, `gitment.broser.js`， 并编辑 `article.ejs` 和 `head.ejs`。
 - 分享按钮为自带按钮，包括Sina（改 `script.js` 和 `article.styl`）。
 - jquery.min.js 路径从google改为 https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js (改 `after-footer.ejs`)。
-- 从 NexT 主题移植而来的本地搜索引擎。
+- 从 NexT 主题移植而来的本地搜索引擎，见[这篇文章](https://hans2936.github.io/2018/06/15/HexoSearch/)。
 
 ## 个人简介
 ### 工作
