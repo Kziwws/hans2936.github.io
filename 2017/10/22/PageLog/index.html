@@ -17,7 +17,7 @@
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://hans2936.github.io/2017/10/22/PageLog/GoogleSite.jpg">
 <meta property="og:image" content="https://hans2936.github.io/2017/10/22/PageLog/Gitment.jpg">
-<meta property="og:updated_time" content="2018-06-20T22:36:16.284Z">
+<meta property="og:updated_time" content="2018-06-21T10:41:55.757Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Github Pages(二)：个人网站的功能插件">
 <meta name="twitter:description" content="在Github Pages(一)：一个最基础的个人网站中，我们已经介绍了怎样用Github Pages做出一个网站框架，例如完全重复出 HTML5 UP 网站上的某个模版。在熟悉该模版之后，你就已经可以编写博客页(html)，并且链接到首页了。甚至可以有出色的排版与配图。 但对一个博客网站来说这样还不够，很多互动功能也是需要手动添加、单独理解的，包括评论框、搜索栏、点击量计数、分享按钮、网站导航、">
@@ -131,7 +131,10 @@
 <p>这一篇文章是一个大合集，总结我曾经见到的个人网站互动功能，以及各个解决方案的优劣。</p>
 <p>注意：虽然列出了这么多插件，但是这些只是技术储备，如果你是一个网站新手，建议先阅读<a href="https://hans2936.github.io/2018/06/06/HexoLog/">Github Pages(三)：使用Hexo博客生成工具</a>。</p>
 <a id="more"></a>
-<h2 id="搜索功能"><a href="#搜索功能" class="headerlink" title="搜索功能"></a>搜索功能</h2><p>搜索功能包括两部分，一是在站内快速找到某一篇博客，这个方便网站的使用；二是在站外的搜索引擎上可以查到你的博客，这个有助于网站的推广。然而我在选择搜索工具的时候发现静态网站是无法自己写站内引擎的 （注：这篇文章写的早，后来我在<a href="https://hans2936.github.io/2018/06/15/HexoSearch/">Github Pages(四)：Hexo进阶-NexT本地搜索引擎的移植</a>搞定了站内搜索），所以我的搜索功能就暂时借助第三方（谷歌）实现了。</p>
+<h2 id="搜索功能"><a href="#搜索功能" class="headerlink" title="搜索功能"></a>搜索功能</h2><p>搜索功能包括两部分，一是在站内快速找到某一篇博客，这个方便网站的使用；二是在站外的搜索引擎上可以查到你的博客，这个有助于网站的推广。然而我在选择搜索工具的时候发现静态网站是无法自己写站内引擎的，所以我的搜索功能就暂时借助第三方（谷歌）实现了。</p>
+<blockquote>
+<p>注：这篇文章写的早，后来我在<a href="https://hans2936.github.io/2018/06/15/HexoSearch/">Github Pages(四)：Hexo进阶-NexT本地搜索引擎的移植</a>搞定了站内搜索。</p>
+</blockquote>
 <h3 id="php站内搜索的失败尝试"><a href="#php站内搜索的失败尝试" class="headerlink" title="php站内搜索的失败尝试"></a>php站内搜索的失败尝试</h3><p>在站内搜索到某个文件，直接写一段PHP遍历本站文件是最靠谱的，所以我就搜到了一位大神写的code（<a href="http://www.moon-soft.com/download/info/1492.htm" target="_blank" rel="noopener">月光软件文章</a>）。但是这段code有两个函数（<code>eregi</code>和<code>split</code>）在PHP7 过期了。所以我修改了一下（使用<code>preg_match</code>和<code>explode</code>），成了这个文件<a href="https://github.com/hans2936/Hans_Blog_Old/blob/master/search.php" target="_blank" rel="noopener">search.php</a>。<br>使用的时候，只要在网页中调用这个search.php就可以了，比如说</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;form method=&quot;GET&quot; action=&quot;search.php&quot;&gt;</span><br><span class="line">&lt;input type=&quot;text&quot; name=&quot;keyword&quot; placeholder=&quot;PHP站内搜索&quot; /&gt;</span><br><span class="line">&lt;/form&gt;</span><br></pre></td></tr></table></figure>
 <p>这个搜索引擎目前的效果是简单的列出全部搜出来的文件链接，在这个效果上美化一下就可以了。</p>
@@ -179,7 +182,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://hans2936.github.io/2017/10/22/PageLog/" data-id="cjioce33r00079vkm1yvpjqps" class="article-share-link">分享</a>
+      <a data-url="https://hans2936.github.io/2017/10/22/PageLog/" data-id="cjiof724o0007fhkme98qt2hf" class="article-share-link">分享</a>
       
 	<!-- <a href="https://hans2936.github.io/2017/10/22/PageLog/#gitment" class="article-comment-link">评论</a> -->
       
