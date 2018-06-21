@@ -16,7 +16,7 @@
 <meta property="og:description" content="Hexo 默认的 Landscape 主题其实已经很好了，可以说简明美观，网页上的元素也不难添加。但是美中不足的就是用了谷歌搜索引擎，谷歌在国内打不开就不说了，而且用外部搜索引擎本来也不如站内搜索便捷实用。后来我发现 NexT 主题是有站内搜索功能的，就试着把这个功能移植了进来。 本地搜索的原理对于动态网站来说，可以通过 php 实现（具体见Github Pages(二)：个人网站的功能插件）。但">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://hans2936.github.io/2018/06/15/HexoSearch/HexoSearch.jpg">
-<meta property="og:updated_time" content="2018-06-20T21:43:50.985Z">
+<meta property="og:updated_time" content="2018-06-20T22:40:46.444Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Github Pages(四)：Hexo进阶-NexT本地搜索引擎的移植">
 <meta name="twitter:description" content="Hexo 默认的 Landscape 主题其实已经很好了，可以说简明美观，网页上的元素也不难添加。但是美中不足的就是用了谷歌搜索引擎，谷歌在国内打不开就不说了，而且用外部搜索引擎本来也不如站内搜索便捷实用。后来我发现 NexT 主题是有站内搜索功能的，就试着把这个功能移植了进来。 本地搜索的原理对于动态网站来说，可以通过 php 实现（具体见Github Pages(二)：个人网站的功能插件）。但">
@@ -126,7 +126,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>Hexo 默认的 Landscape 主题其实已经很好了，可以说简明美观，网页上的元素也不难添加。<br>但是美中不足的就是用了谷歌搜索引擎，谷歌在国内打不开就不说了，而且用外部搜索引擎本来也不如站内搜索便捷实用。<br>后来我发现 NexT 主题是有站内搜索功能的，就试着把这个功能移植了进来。</p>
-<h2 id="本地搜索的原理"><a href="#本地搜索的原理" class="headerlink" title="本地搜索的原理"></a>本地搜索的原理</h2><p>对于动态网站来说，可以通过 php 实现（具体见<a href="https://www.jianshu.com/p/2ff5e11e849c" target="_blank" rel="noopener">Github Pages(二)：个人网站的功能插件</a>）。<br>但是，GitHub博客是静态网站，用不了 php，导致我在老网站只能把google搜索结果页内置到了网站里面 （Landscape也用了谷歌）。</p>
+<h2 id="本地搜索的原理"><a href="#本地搜索的原理" class="headerlink" title="本地搜索的原理"></a>本地搜索的原理</h2><p>对于动态网站来说，可以通过 php 实现（具体见<a href="https://hans2936.github.io/2017/10/22/PageLog/">Github Pages(二)：个人网站的功能插件</a>）。<br>但是，GitHub博客是静态网站，用不了 php，导致我在老网站只能把google搜索结果页内置到了网站里面 （Landscape也用了谷歌）。</p>
 <p>NexT 主题实现这个功能，用了 Hexo 的拓展包 <code>hexo-generator-searchdb</code>，它预先生成了一个文本库<code>search.xml</code>，然后传到了网站里面 。在本地搜索的时候，NexT直接用javascript调用了这个文件，从而实现了静态网站的本地搜索。</p>
 <a id="more"></a>
 <h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>首先把产生文本库的包安装好，执行 <code>npm install hexo-generator-searchdb --save</code>。<br>然后在主配置文件 <code>_config.yml</code>里面加上<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  limit: 10000</span><br></pre></td></tr></table></figure></p>
@@ -173,7 +173,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://hans2936.github.io/2018/06/15/HexoSearch/" data-id="cjinoy53s0005nw0ufviijzjd" class="article-share-link">分享</a>
+      <a data-url="https://hans2936.github.io/2018/06/15/HexoSearch/" data-id="cjiocbl0y00078vkmhgkmmsx1" class="article-share-link">分享</a>
       
 	<!-- <a href="https://hans2936.github.io/2018/06/15/HexoSearch/#gitment" class="article-comment-link">评论</a> -->
       
@@ -211,6 +211,7 @@
   <div id="gitment"></div>
       <script>
       const gitment = new Gitment({
+	id = 'Fri Jun 15 2018 01:55:42 GMT+0200',
         owner: 'hans2936',
         repo: 'hans2936.github.io',
         oauth: {
