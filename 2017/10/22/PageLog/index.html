@@ -17,7 +17,7 @@
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://hans2936.github.io/2017/10/22/PageLog/GoogleSite.jpg">
 <meta property="og:image" content="https://hans2936.github.io/2017/10/22/PageLog/Gitment.jpg">
-<meta property="og:updated_time" content="2018-06-21T10:41:55.757Z">
+<meta property="og:updated_time" content="2018-06-22T20:56:31.401Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Github Pages(二)：个人网站的功能插件">
 <meta name="twitter:description" content="在Github Pages(一)：一个最基础的个人网站中，我们已经介绍了怎样用Github Pages做出一个网站框架，例如完全重复出 HTML5 UP 网站上的某个模版。在熟悉该模版之后，你就已经可以编写博客页(html)，并且链接到首页了。甚至可以有出色的排版与配图。 但对一个博客网站来说这样还不够，很多互动功能也是需要手动添加、单独理解的，包括评论框、搜索栏、点击量计数、分享按钮、网站导航、">
@@ -171,10 +171,10 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apachectl start</span><br><span class="line">sudo apachectl stop</span><br></pre></td></tr></table></figure>
 <p>启动<code>apachectl</code>后，把你的网站文件夹拷贝到<code>/Library/WebServer/Documents</code>，然后打开<code>http://127.0.0.1/网站文件夹</code>就可以了，博客里面还写了一些高级功能，如怎样更改路径和配置等。</p>
 <p>四，如果用了Hexo博客工具，一条<code>hexo s</code>命令就可以了。</p>
-<h3 id="回到顶部按钮"><a href="#回到顶部按钮" class="headerlink" title="回到顶部按钮"></a>回到顶部按钮</h3><p>在网页很长的时候，回到顶部按钮就很有用了。这个需要一段javascript code实现。我是在Google上随便找了一个，改了改图标和大小，也可以看文件<a href="https://github.com/hans2936/Hans_Blog_Old/blob/master/assets/js/back.js" target="_blank" rel="noopener">back.js</a>。确定按钮图片的位置对之后，引用一下就可以了。</p>
 <h2 id="图片滚动"><a href="#图片滚动" class="headerlink" title="图片滚动"></a>图片滚动</h2><h3 id="图片滚动插件"><a href="#图片滚动插件" class="headerlink" title="图片滚动插件"></a>图片滚动插件</h3><p>这个功能对博客来说可有可无，不过对于普通网站来说，宣传新闻，推销产品什么的还是很有用的。我觉得很有意思就留在首页了，循环播放本站的日志，这应该是本站唯一一个没那么朴素的效果。<br>本站的插件叫做<a href="https://github.com/Codeinwp/Nivo-Slider-jQuery" target="_blank" rel="noopener">Nivo Slider</a>，用起来比较舒服，因为图片和图例是分开的，设置也很多。我试了好几个素材网站的插件都没有这个好。但是Nivo Slider有一个毛病是图片的尺寸最好都一样，而且不能太方正（我都是1920x960的图），否则电脑端还好，但在移动端会出现显示问题。</p>
 <p>点击链接<a href="https://github.com/Codeinwp/Nivo-Slider-jQuery" target="_blank" rel="noopener">Github:Nivo Slider</a>，下载并学习demo就可以把它加入你的网页了。</p>
 <h3 id="手机滑动的实现"><a href="#手机滑动的实现" class="headerlink" title="手机滑动的实现"></a>手机滑动的实现</h3><p>Nivo Slider本身是不支持手机的，找那两个小按钮实在比较麻烦。所以我找到了一位高人的博客 <a href="http://willrees.com/2013/02/make-your-nivo-slider-touch-capable/" target="_blank" rel="noopener">Will Rees</a>。他在里面讲了怎样利用一段支持手机滑动指令的代码 <a href="http://hammerjs.github.io" target="_blank" rel="noopener">Hammer.js</a>实现Nivo Slider的左右滑动。<br>用手机打开本站主页就可以看到效果了。不过因为我只是在Nivo Slider上面稍作修改，在手机上是只能左右滑动，不能手指悬停的。完美的解决方案可能是为手机单独找个插件。</p>
+<h2 id="回到顶部按钮"><a href="#回到顶部按钮" class="headerlink" title="回到顶部按钮"></a>回到顶部按钮</h2><p>在网页很长的时候，回到顶部按钮就很有用了。这个需要一段javascript code实现。我是在Google上随便找了一个，改了改图标和大小，也可以看文件<a href="https://github.com/hans2936/Hans_Blog_Old/blob/master/assets/js/back.js" target="_blank" rel="noopener">back.js</a>。确定按钮图片的位置对之后，引用一下就可以了。</p>
 <h2 id="关于、版权"><a href="#关于、版权" class="headerlink" title="关于、版权"></a>关于、版权</h2><p>考虑到现在转载不署名的情况到处都是，在某个位置声明一下网站内容的版权也是有必要的。本站的版权声明见<a href="https://hans2936.github.io/blogs/About.html#declare">本站：关于</a>。在网页中加入这个版权声明其实很简单，只要进入版权网页<a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/" target="_blank" rel="noopener">Creative Commons</a>，在这一页最下方点击“<a href="https://creativecommons.org/choose/results-one?license_code=by-nc-sa&amp;jurisdiction=cn&amp;version=3.0&amp;lang=zh" target="_blank" rel="noopener">将这个授权协议使用在您自己的作品中</a>”就可以找到代码了，或者直接点这里的链接也行。</p>
 <p>这个证书是一个署名-可修改-非商业用途证书，如果你需要其他政策，也可以去Google其他证书的名字，基本上第一个弹出来的就是这些Createive Commons协议了。</p>
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>至此我总结完了学习过程中遇到的各种功能插件。我属于业余，很多细节还在学习中，相信会有更好的解决方案。</p>
@@ -182,7 +182,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://hans2936.github.io/2017/10/22/PageLog/" data-id="cjiof724o0007fhkme98qt2hf" class="article-share-link">分享</a>
+      <a data-url="https://hans2936.github.io/2017/10/22/PageLog/" data-id="cjiqhaaam0005t00ug7kdo1i4" class="article-share-link">分享</a>
       
 	<!-- <a href="https://hans2936.github.io/2017/10/22/PageLog/#gitment" class="article-comment-link">评论</a> -->
       
