@@ -34,6 +34,8 @@
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/gitment.css"> 
   <script src="/js/gitment.browser.js"></script>
+  <link rel="stylesheet" href="/css/gitalk.css">
+  <script src="/js/gitalk.min.js"></script>
 </head>
 
 <body>
@@ -183,9 +185,9 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://hans2936.github.io/2017/10/22/PageLog/" data-id="ck963wqij000b88y6gm538rrp" class="article-share-link">分享</a>
+      <a data-url="https://hans2936.github.io/2017/10/22/PageLog/" data-id="ck964he5t000re5y63rmi4b3f" class="article-share-link">分享</a>
       
-	<a href="https://hans2936.github.io/2017/10/22/PageLog/#gitment" class="article-comment-link">评论</a>
+	<a href="https://hans2936.github.io/2017/10/22/PageLog/#gitalk-container" class="article-comment-link">评论</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/个人网站/">个人网站</a></li></ul>
@@ -218,21 +220,23 @@
 </article>
 
 
+
+
   <section id="comments">
-  <div id="gitment"></div>
+  <div id="gitalk-container"></div>
       <script>
-      const gitment = new Gitment({
-        id: 'Sun Oct 22 2017 01:55:42 GMT-0700',
-        owner: 'hans2936',
-        repo: 'hans2936.github.io',
-        oauth: {
-        client_id: '3e8c534985cee5b9549d',
-        client_secret: '292ef9d120bfb7ed9b61b0455a52c8c61737250c',
-        },
-      })
-      gitment.render('gitment')
+      var gitalk = new Gitalk({
+      clientID: '3e8c534985cee5b9549d',
+      clientSecret: '292ef9d120bfb7ed9b61b0455a52c8c61737250c',
+      repo: 'hans2936.github.io',
+      owner: 'hans2936',
+      admin: ['hans2936'],
+      id: 'Sun Oct 22 2017 01:55:42 GMT-0700',      
+      distractionFreeMode: false  
+})
       </script>
 </section>
+
 
 </section>
         

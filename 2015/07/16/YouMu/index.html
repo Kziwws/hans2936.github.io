@@ -33,6 +33,8 @@
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/gitment.css"> 
   <script src="/js/gitment.browser.js"></script>
+  <link rel="stylesheet" href="/css/gitalk.css">
+  <script src="/js/gitalk.min.js"></script>
 </head>
 
 <body>
@@ -143,9 +145,9 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://hans2936.github.io/2015/07/16/YouMu/" data-id="ck963wqix000q88y6p2jdarou" class="article-share-link">分享</a>
+      <a data-url="https://hans2936.github.io/2015/07/16/YouMu/" data-id="ck964he5x000xe5y6xdjje11g" class="article-share-link">分享</a>
       
-	<a href="https://hans2936.github.io/2015/07/16/YouMu/#gitment" class="article-comment-link">评论</a>
+	<a href="https://hans2936.github.io/2015/07/16/YouMu/#gitalk-container" class="article-comment-link">评论</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/诗与散文/">诗与散文</a></li></ul>
@@ -178,21 +180,23 @@
 </article>
 
 
+
+
   <section id="comments">
-  <div id="gitment"></div>
+  <div id="gitalk-container"></div>
       <script>
-      const gitment = new Gitment({
-        id: 'Thu Jul 16 2015 20:42:42 GMT-0700',
-        owner: 'hans2936',
-        repo: 'hans2936.github.io',
-        oauth: {
-        client_id: '3e8c534985cee5b9549d',
-        client_secret: '292ef9d120bfb7ed9b61b0455a52c8c61737250c',
-        },
-      })
-      gitment.render('gitment')
+      var gitalk = new Gitalk({
+      clientID: '3e8c534985cee5b9549d',
+      clientSecret: '292ef9d120bfb7ed9b61b0455a52c8c61737250c',
+      repo: 'hans2936.github.io',
+      owner: 'hans2936',
+      admin: ['hans2936'],
+      id: 'Thu Jul 16 2015 20:42:42 GMT-0700',      
+      distractionFreeMode: false  
+})
       </script>
 </section>
+
 
 </section>
         
